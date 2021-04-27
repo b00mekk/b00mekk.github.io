@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+	
+	<title>frosty bot</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+
+
+<body>
+
+
+
+<audio id="myaudio" autoplay loop onloadeddata="glosnosc()">
+	<!-- <source src="nagranie.mp3"> -->
+</audio>
+
+
+<!-- -->
+
+<style>
+
+	.fa-discord {
+		color: #7289da;
+	}
+	.toast {
+		background: black;
+		box-shadow: none !important;
+		margin-top: 30px;
+	}
+
+	.toast-error {
+		border: 1px solid red;
+	}
+
+	.toast-success {
+		border: 1px solid red;
+	}
+</style>
+
+
+<!-- SCRIPT -->
+<script type="text/javascript">
+
+
+	function copyToClipboard(text) {
+	    var $temp = $("<input>");
+	    $("body").append($temp);
+	    $temp.val(text).select();
+	    document.execCommand("copy");
+	    $temp.remove();
+	}
+
+	function author() {
+		var discord = "b00mek#6136 [ copy ]"
+		var discord_copy = "b00mek#6136"
+		toastr.info(discord)
+
+		copyToClipboard(discord_copy);
+
+	}
+</script>
+
+<!--        -->
+
+
+<div class="background">
+
+    <div id="pattern"></div>
+
+    	<img src="other/skelly.gif" id="background">
+    <!--	
+		<video id="background" loop autoplay onloadeddata="glosnosc()">
+        	<source src="video/alone.mp4" type="video/mp4">
+      	</video>
+      -->	
+	 	
+		<audio id="muzyka" loop autoplay onloadeddata="glosnosc()">
+			<source src="nagranie.mp3" type="audio/mp3">
+		</audio>
+	
+
+
+		<script>
+			function glosnosc() {
+				// var video = document.getElementById("background")
+				// video.volume = 0.05;
+				var audio = document.getElementById("muzyka")
+				audio.volume = 0.05;
+			}
+		</script>
+
+    </div>
+</div>
+
+
+<div style="position: absolute; left: 2%; top: 1%;">
+	<h1>
+		<a style="text-transform: lowercase;" href="/docs/docs.html">docs</a>
+	</h1>
+</div>
+
+
+<div style="position: absolute; left: 84%; top: 1%;">
+	<h1>
+		<a style="text-transform: lowercase;" href="https://discord.com/oauth2/authorize?client_id=631872011177689119&scope=bot&permissions=8">invite</a>
+	</h1>
+</div>
+
+<div style="position: absolute; left: 92%; top: 1%;">
+	<h1>
+		<a onclick="author()" style="cursor: pointer;">author</a>
+
+	</h1>
+</div>
+
+
+<div class="container">
+	<h1 class="brand-header">
+		<a style="text-transform: lowercase;">frosty</a>
+	</h1>
+
+</div>
+
+
+
+</body>
+</html>

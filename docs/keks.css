@@ -1,0 +1,221 @@
+
+body
+{
+    overflow: hidden;
+    background-color: rgb(30,30,30);
+    
+    background-color: rgb(30,30,30);
+    margin: 0;
+    font-family: courier_regular;
+    src: url('/other/Consolas.ttf');
+}
+
+@font-face {
+  font-family: courier_regular;
+  src: url('/other/Consolas.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  src: url('/other/Consolas.ttf');
+  font-family: consolas, sans-serif;
+}
+br {
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 0; /* change this to whatever height you want it */
+}
+
+.footer {
+   position: fixed;
+   left: 2%;
+   top: 96%;
+   width: 100%;
+   color: white;
+   text-align: left;
+   font-size: 2px;
+}
+
+.header {
+   position: fixed;
+   left: 97%;
+   top: 1%;
+   width: 100%;
+   color: white;
+   text-align: left;
+   font-size: 2px;
+}
+
+a {
+  color: #e4e3e3;
+  text-decoration: none;
+  font-size: 80px;
+}
+
+.container {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+#brand {
+  margin-left: 0.65pc;
+}
+
+.top-left {
+  position: absolute;
+  left: 50%;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -3;
+}
+
+#pattern {
+  background: transparent url('other/dot.png') repeat 0 0;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  
+  padding: 100;
+  z-index: -1;
+  opacity: 1;
+}
+
+#pattern, #background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#background {
+  z-index: -2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 135%;
+  min-height: 110%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  overflow: hidden;
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(5px);
+}
+
+a {
+  color: #e4e3e3;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.opis {
+  color: #6e6e6e;
+}
+
+/* tabsy */
+
+.kategorie {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}
+
+.lista {
+  top: 50%;
+}
+
+ul.lista {
+  list-style: none;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ul.lista li {
+  background: none;
+  display: inline-block;
+  cursor: pointer; 
+}
+
+ul.lista li.current {
+  /*color: #222;*/
+  /*background: #ededed;*/
+  /*border: 1px;
+  border-style: solid;
+  border-color: #878787;
+  padding: 1em;
+  border-radius: 1%;*/
+
+}
+
+.tab-content {
+  display: none;
+
+}
+
+.tab-content.current {
+  position: fixed;
+  display: inherit;
+  text-align: center;
+  color: #e4e3e3;
+  font-size: 25px;
+  font-weight: 800;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*       */
+
+
+/* switches */
+
+.previous {
+  color: #6e6e6e;
+  position: absolute;
+  font-size: 25px;
+  top: 65%;
+  left: 39%;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.next {
+  color: #6e6e6e;
+  position: absolute;
+  font-size: 25px;
+  top: 65%;
+  left: 60%;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+
+/*          */
